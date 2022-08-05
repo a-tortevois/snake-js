@@ -7,7 +7,7 @@ module.exports = {
     // test: path.join(__dirname, "src/test.js"),
   },
   output: {
-    path: path.join(__dirname, "dist"),
+    path: path.join(__dirname, "build"),
     filename: "[name].bundle.js",
   },
   module: {
@@ -38,7 +38,7 @@ module.exports = {
   mode: "development",
   devServer: {
     open: true,
-    contentBase: "./dist",
+    contentBase: "./build",
     inline: true,
     port: 4001,
     historyApiFallback: {
